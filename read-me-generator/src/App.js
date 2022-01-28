@@ -1,24 +1,28 @@
-import React,{useState} from 'react';
-import './App.css';
-
+import React, { useState } from "react";
+import "./App.css";
+import About from "./components/About/index";
+import Nav from "./components/Nav/index";
+import Footer from "./components/Footer/index";
+import ReadMeGenerator from "./components/ReadMeGenerator/index";
 
 function App() {
+  const [home, setHome] = useState("about");
+  const renderTab = () => {
+    switch (home) {
+      case "about":
+        return <About />;
+      case "readMeGenerator":
+        return <ReadMeGenerator />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav home={home} setHome={setHome}></Nav>
+      <main>{renderTab()}</main>
+      <Footer home={home} setHome={setHome}></Footer>
     </div>
   );
 }
