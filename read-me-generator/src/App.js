@@ -5,6 +5,7 @@ import Nav from "./components/Nav/index";
 import Footer from "./components/Footer/index";
 import ReadMeGenerator from "./components/ReadMeGenerator/index";
 import Home from "./components/Home/index";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [home, setHome] = useState("Home");
