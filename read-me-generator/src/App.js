@@ -4,11 +4,14 @@ import About from "./components/About/index";
 import Nav from "./components/Nav/index";
 import Footer from "./components/Footer/index";
 import ReadMeGenerator from "./components/ReadMeGenerator/index";
+import Home from "./components/Home/index";
 
 function App() {
-  const [home, setHome] = useState("about");
+  const [home, setHome] = useState("Home");
   const renderTab = () => {
     switch (home) {
+      case "Home":
+        return <Home />;
       case "about":
         return <About />;
       case "readMeGenerator":
