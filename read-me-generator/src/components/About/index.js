@@ -6,7 +6,7 @@ function About() {
     <section className="my-5">
       
       <Card>
-        <Card.Header>About Me</Card.Header>
+        <Card.Header>About The Application</Card.Header>
         <Card.Body className="pd">
           <blockquote className="blockquote mb-0 pd">
             <p>
