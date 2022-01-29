@@ -4,10 +4,7 @@ function Nav(props) {
   const { home, setHome } = props;
 
   return (
-    <header
-      className="flex-row px-2 py-2"
-      style={"background-image: linear-gradient(to right, red, blue);"}
-    >
+    <header className="flex-row px-2 py-2 header">
       <h2>
         <a href="/" className="hbackground">
           Read Me Generator
@@ -33,11 +30,9 @@ function Nav(props) {
               Application
             </a>
           </li>
-          
         </ul>
       </nav>
     </header>
-    
   );
 }
 
