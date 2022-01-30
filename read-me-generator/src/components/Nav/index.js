@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 
 function Nav(props) {
   const { home, setHome } = props;
@@ -21,7 +22,7 @@ function Nav(props) {
             <a
               href="#about"
               className="hbackground"
-              onClick={() => setHome("about")}
+              onClick={() => Navigate("/about")}
             >
               About
             </a>
@@ -30,7 +31,7 @@ function Nav(props) {
             <a
               href="#readMeGenerator"
               className="hbackground"
-              onClick={() => setHome("application")}
+              onClick={() => Navigate("/readMeGenerator")}
             >
               Application
             </a>
