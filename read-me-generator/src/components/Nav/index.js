@@ -4,7 +4,12 @@ function Nav(props) {
   const { home, setHome } = props;
 
   return (
-    <header className="flex-row px-2 py-2 header">
+    <header
+      className="flex-row px-2 py-2 header"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(165, 42, 42, 1), rgba(0, 133, 255, 1))`,
+      }}
+    >
       <h2>
         <a href="/" className="hbackground">
           Read Me Generator
@@ -23,9 +28,9 @@ function Nav(props) {
           </li>
           <li className="px-2 py-2">
             <a
-              href="#portfolio"
+              href="#readMeGenerator"
               className="hbackground"
-              onClick={() => setHome("portfolio")}
+              onClick={() => setHome("application")}
             >
               Application
             </a>
