@@ -1,49 +1,32 @@
 import React from "react";
-import {  Card } from "react-bootstrap";
+import {  Card, Button } from "react-bootstrap";
 
 function About() {
   return (
-    <section className="my-5">
+    <section className="my-5 mar">
       
       <Card>
         <Card.Header>About The Application</Card.Header>
-        <Card.Body className="pd">
+        <Card.Body className="pd ">
           <blockquote className="blockquote mb-0 pd">
             <p>
               {" "}
-              Hi my name is Sallam, I'm a full-stack web developer based out of
+              Hi my name is Sam, I'm a full-stack web developer based out of
               Toronto, Ontario. Initially I started of as an Industrial and
-              Operations Engineer out of Portland, Oregon. When I moved to
-              Canada almost three years ago I looked towards changing my field
-              of work. I worked in different environments from customer service
-              for the largest telecom company in the U.S. to working as an
-              customs operations engineer for one of the largest logistics
-              company in the world. With all these changes I came to the
-              realization that I would like to work on computers, particularly
-              software.
+              Operations Engineer out of Portland, Oregon. I did this project because I enjoy optimizing and streamlining processes. 
               <br></br>
               <br></br>
-              Given my passion for electronics and the fact that I have built
-              countless machines, I looked for different programs that would
-              help further my education and found web development. I enrolled at
-              the University of Toronto in their SCS Full-Stack Web Development
-              Program and fell in love. I have built a good understanding for
-              the different technologies involved withing Web Development. The
-              program also helped me build a strong foundation in JavaScript,
-              HTML, CSS with a wide range of associated technologies such as
-              React.js, Node.js, MongoDB, Express.js and the (MERN) technology
-              stack.
+              This application will function was developed utilizing React, Javascript and React Bootstrap to generate a full Read Me file for github. 
               <br></br>
               <br></br>
-              On my off days when I choose to take some time to myself I enjoy
-              traveling and photography. I have a goal to visit as many
-              countries as I possibly can but in the meantime I have focused on
-              photography. I have made a hobby of it given I have always enjoyed
-              the accompanied adventure and what captures your story than that
-              perfect image. I have went ahead and uploaded a few pictures from
-              my portfolio and I would encourage you to take a look.{" "}
+              Just fill in the information required and press the process button at the bottom and it will generate the file for you to swap with the file generated from github. The file will naturally have all the tags and structure for github. In the case you leave any sections empty the app will not fill it in and feel free to delete the header from your file.
+              <br></br>
+              <br></br>
+              If you have any comments, questions or even recommendations for that might be missing and could be updated feel free to reach out to me on LinkedIn, Instagram or even Github found in the link bellow. I am leaving this as an open source project so feel free to use it as you wish.
+              {" "}
             </p>
           </blockquote>
+          <Button variant="primary" size="lg" href="#application" className=" center" > Go To Application</Button>
         </Card.Body>
       </Card>
     </section>
