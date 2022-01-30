@@ -6,26 +6,22 @@ import Footer from "./components/Footer/index";
 import ReadMeGenerator from "./components/ReadMeGenerator/index";
 import Home from "./components/Home/index";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [home, setHome] = useState("Home");
-  const renderTab = () => {
-    switch (home) {
-      case "Home":
-        return <Home />;
-      case "about":
-        return <About />;
-      case "readMeGenerator":
-        return <ReadMeGenerator />;
-      default:
-        return null;
-    }
-  };
+  
 
   return (
     <div>
       <Nav home={home} setHome={setHome}></Nav>
-      <main>{renderTab()}</main>
+      <main>
+        <Routes>
+          <Route path="/" element ={<Home/>}/>
+          <Route path="/about" element={<About />} />
+          <Route path="/readMeGenerator" element={<ReadMeGenerator />} />
+        </Routes>
+      </main>
       <Footer home={home} setHome={setHome}></Footer>
     </div>
   );
