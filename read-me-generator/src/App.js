@@ -13,11 +13,15 @@ function App() {
   
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(165, 42, 42, 1), rgba(0, 133, 255, 1))`,
+      }}
+    >
       <Nav home={home} setHome={setHome}></Nav>
       <main>
         <Routes>
-          <Route path="/" element ={<Home/>}/>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/readMeGenerator" element={<ReadMeGenerator />} />
         </Routes>
