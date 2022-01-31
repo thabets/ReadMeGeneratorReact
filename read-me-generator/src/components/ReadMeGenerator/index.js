@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Col,Row, FloatingLabel } from "react-bootstrap";
+import { Form, Col,Row, FloatingLabel,Button, FormLabel } from "react-bootstrap";
 
 function ReadMeGenerator() {
   return (
@@ -7,12 +7,27 @@ function ReadMeGenerator() {
       <Form>
         <Row>
           <Col>
-            <Form.Control placeholder="Project Name" />
+            <FormLabel>
+              Please Insert The Name Of The Project/Application
+            </FormLabel>
+            <Form.Control placeholder="Project Name"></Form.Control>
+            <FormLabel>
+              Please Insert The Name Of The Project/Application
+            </FormLabel>
             <Form.Control placeholder="Creator" />
+            <FormLabel>
+              Please Insert The Name Of The Project/Application
+            </FormLabel>
             <Form.Control placeholder="Contributors" />
+            <FormLabel>
+              Please Insert The Name Of The Project/Application
+            </FormLabel>
             <FloatingLabel controlId="floatingTextarea" label="Description">
               <Form.Control as="textarea" style={{ height: "100px" }} />
             </FloatingLabel>
+            <FormLabel>
+              Please Insert The Name Of The Project/Application
+            </FormLabel>
             <FloatingLabel
               controlId="floatingTextarea2"
               label="Installation Requirements"
@@ -42,6 +57,9 @@ function ReadMeGenerator() {
           </Col>
         </Row>
       </Form>
+      <Button variant="dark" className="center">
+        Submit
+      </Button>
     </div>
   );
 }
