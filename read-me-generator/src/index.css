@@ -54,7 +54,7 @@ li {
 .center {
   display: flex;
   justify-content: center;
-  font-weight: bold;
+  align-items: baseline;
 }
 .pd {
   padding-top: 10px;
