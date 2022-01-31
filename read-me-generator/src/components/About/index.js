@@ -9,7 +9,7 @@ function About() {
       <Card>
         <Card.Header>About The Application</Card.Header>
         <Card.Body className="pd ">
-          <blockquote className="blockquote mb-0 pd">
+          <blockquote className="blockquote mb-0 pd ">
             <p>
               {" "}
               Hi my name is Sam, I'm a full-stack web developer based out of
@@ -38,10 +38,12 @@ function About() {
               to use it as you wish.{" "}
             </p>
           </blockquote>
+          <br></br>
           <Button
             variant="primary"
             size="lg"
             onClick={() => navigate("/readMeGenerator")}
+            className="text-center"
           >
             {" "}
             Go To Application
