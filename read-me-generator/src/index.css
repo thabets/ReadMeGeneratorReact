@@ -71,3 +71,13 @@ li {
 .border{
   border-radius: '3rem';
 }
+.label{
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mar2{
+  margin: 0px 10px 0px 10px;
+}
