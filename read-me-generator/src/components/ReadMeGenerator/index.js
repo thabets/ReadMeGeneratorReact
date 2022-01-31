@@ -1,5 +1,12 @@
 import React from "react";
-import { Form, Col,Row, FloatingLabel,Button, FormLabel } from "react-bootstrap";
+import {
+  Form,
+  Col,
+  Row,
+  FloatingLabel,
+  Button,
+  FormLabel,
+} from "react-bootstrap";
 
 function ReadMeGenerator() {
   return (
@@ -7,30 +14,47 @@ function ReadMeGenerator() {
       <Form>
         <Row>
           <Col>
-            <FormLabel>
+            <FormLabel className="label">
               Please Insert The Name Of The Project/Application
             </FormLabel>
-            <Form.Control placeholder="Project Name"></Form.Control>
-            <FormLabel>
-              Please Insert The Name Of The Project/Application
+
+            <Form.Control
+              className="mar2"
+              placeholder="Project Name"
+            ></Form.Control>
+
+            <FormLabel className="label">
+              Please Insert The Name Of The Creator
             </FormLabel>
-            <Form.Control placeholder="Creator" />
-            <FormLabel>
-              Please Insert The Name Of The Project/Application
+
+            <Form.Control className="mar2" placeholder="Creator" />
+
+            <FormLabel className="label">
+              Please Insert The Name Of Any Contributors
             </FormLabel>
-            <Form.Control placeholder="Contributors" />
-            <FormLabel>
-              Please Insert The Name Of The Project/Application
+
+            <Form.Control className="mar2" placeholder="Contributors" />
+
+            <FormLabel className="label">
+              Please Insert A Short Description Of The Application
             </FormLabel>
-            <FloatingLabel controlId="floatingTextarea" label="Description">
+
+            <FloatingLabel
+              className="mar2"
+              controlId="floatingTextarea"
+              label="Description"
+            >
               <Form.Control as="textarea" style={{ height: "100px" }} />
             </FloatingLabel>
-            <FormLabel>
-              Please Insert The Name Of The Project/Application
+
+            <FormLabel className="label">
+              Please Insert Any Installation Requirements Or Instructions
             </FormLabel>
+
             <FloatingLabel
               controlId="floatingTextarea2"
-              label="Installation Requirements"
+              label="Installation Requirements Or Instructions"
+              className="mar2"
             >
               <Form.Control as="textarea" style={{ height: "100px" }} />
             </FloatingLabel>
@@ -57,7 +81,7 @@ function ReadMeGenerator() {
           </Col>
         </Row>
       </Form>
-      <Button variant="dark" className="center">
+      <Button variant="dark" style={{margin:" 30px 10px 10px 10px"}}>
         Submit
       </Button>
     </div>
