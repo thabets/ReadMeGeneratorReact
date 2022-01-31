@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 function Nav(props) {
-  const { home, setHome } = props;
+  
 
   return (
     <header
@@ -20,7 +20,7 @@ function Nav(props) {
         <ul className="flex-row ">
           <li className="px-2 py-2 ">
             <a
-              href="#about"
+              href="about"
               className="hbackground"
               onClick={() => Navigate("/about")}
             >
@@ -29,7 +29,7 @@ function Nav(props) {
           </li>
           <li className="px-2 py-2">
             <a
-              href="#readMeGenerator"
+              href="readMeGenerator"
               className="hbackground"
               onClick={() => Navigate("/readMeGenerator")}
             >

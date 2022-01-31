@@ -1,10 +1,10 @@
-import  React, {useState} from "react";
+import  React from "react";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "../About/index"
 
-function Home(props) {
+
+function Home() {
   const navigate = useNavigate();
   return (
     <div>
