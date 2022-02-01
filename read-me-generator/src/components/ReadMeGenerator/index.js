@@ -8,6 +8,8 @@ import {
   FormLabel,
 } from "react-bootstrap";
 
+import getVal from "../Helpers/index"
+
 function ReadMeGenerator() {
   return (
     <div>
@@ -138,7 +140,11 @@ function ReadMeGenerator() {
           </Col>
         </Row>
       </Form>
-      <Button variant="dark" style={{ margin: " 30px 10px 10px 10px" }}>
+      <Button
+        variant="dark"
+        style={{ margin: " 30px 10px 10px 10px" }}
+        onClick={getVal}
+      >
         Submit
       </Button>
     </div>
