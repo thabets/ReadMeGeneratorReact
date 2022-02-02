@@ -1,9 +1,9 @@
 import React from "react";
 
-
-function getVal() {
-  const val = document.querySelector("input").value;
-  console.log(val);
+function handleSubmit() {
+  const val = document.getElementById("1").value;
+  const val2 = document.getElementById('2').value;
+  console.log(val,val2);
 }
 
-export default getVal;
+export default handleSubmit;
