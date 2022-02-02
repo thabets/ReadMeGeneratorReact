@@ -8,8 +8,7 @@ import {
   FormLabel,
 } from "react-bootstrap";
 
-import handleSubmit from "../Helpers/index"
-
+import handleSubmit from "../Helpers/index";
 
 function ReadMeGenerator() {
   return (
@@ -43,26 +42,23 @@ function ReadMeGenerator() {
               className="mar2"
               placeholder="Contributors"
               style={{ width: "98%" }}
+              id="3"
             />
             <FormLabel className="label">
               Please Insert A Short Description Of The Application
             </FormLabel>
-            <FloatingLabel
-              className="mar2"
-              controlId="floatingTextarea"
-              label="Description"
-            >
-              <Form.Control as="textarea" style={{ height: "100px" }} />
+            <FloatingLabel className="mar2" label="Description">
+              
+              <Form.Control as="textarea" style={{ height: "100px" }} id="4" />
             </FloatingLabel>
             <FormLabel className="label">
               Please Insert Any Installation Requirements Or Instructions
             </FormLabel>
             <FloatingLabel
-              controlId="floatingTextarea2"
               label="Installation Requirements Or Instructions"
               className="mar2"
             >
-              <Form.Control as="textarea" style={{ height: "100px" }} />
+              <Form.Control as="textarea" style={{ height: "100px" }} id="5" />
             </FloatingLabel>
           </Col>
           <Col>
@@ -71,11 +67,10 @@ function ReadMeGenerator() {
             </FormLabel>
 
             <FloatingLabel
-              controlId="floatingTextarea3"
               label="Image Path ex ../src/images/image.jpg"
               className="mar2"
             >
-              <Form.Control as="textarea" style={{ height: "100px" }} />
+              <Form.Control as="textarea" style={{ height: "100px" }} id="6" />
             </FloatingLabel>
 
             <FormLabel className="label">
@@ -85,6 +80,7 @@ function ReadMeGenerator() {
               className="mar2"
               placeholder="Active Link"
               style={{ width: "98%" }}
+              id="7"
             ></Form.Control>
 
             <FormLabel className="label">
@@ -94,6 +90,7 @@ function ReadMeGenerator() {
               className="mar2"
               placeholder="Repository Link"
               style={{ width: "98%" }}
+              id="8"
             />
 
             <FormLabel className="label">
@@ -103,6 +100,7 @@ function ReadMeGenerator() {
               className="mar2"
               placeholder="Contact Email"
               style={{ width: "98%" }}
+              id="9"
             />
 
             <FormLabel className="label">
@@ -112,6 +110,7 @@ function ReadMeGenerator() {
               className="mar2"
               placeholder="Contact #"
               style={{ width: "98%" }}
+              id="10"
             />
 
             <FormLabel className="label">
@@ -121,16 +120,17 @@ function ReadMeGenerator() {
               className="mar2"
               aria-label="License"
               style={{ width: "98%" }}
+              id="11"
             >
               <option>Please Select a License for this Project</option>
-              <option value="1">MIT</option>
-              <option value="2">IBM</option>
-              <option value="3">ISC</option>
-              <option value="4">Mozilla</option>
-              <option value="5">Apache 2.0</option>
-              <option value="6">Boost</option>
-              <option value="7">BSD</option>
-              <option value="8">None</option>
+              <option value="MIT">MIT</option>
+              <option value="IBM">IBM</option>
+              <option value="ISC">ISC</option>
+              <option value="Mozilla">Mozilla</option>
+              <option value="Apache 2.0">Apache 2.0</option>
+              <option value="Boost">Boost</option>
+              <option value="BSD">BSD</option>
+              <option value="None">None</option>
             </Form.Select>
           </Col>
         </Row>
