@@ -16,7 +16,7 @@ function ReadMeGenerator() {
       <Form>
         <Row>
           <Col>
-            ""
+           
             <FormLabel className="label">
               Please Insert The Name Of The Project/Application
             </FormLabel>
@@ -48,7 +48,7 @@ function ReadMeGenerator() {
               Please Insert A Short Description Of The Application
             </FormLabel>
             <FloatingLabel className="mar2" label="Description">
-              
+
               <Form.Control as="textarea" style={{ height: "100px" }} id="4" />
             </FloatingLabel>
             <FormLabel className="label">
