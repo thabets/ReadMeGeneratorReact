@@ -7,16 +7,17 @@ import {
   Button,
   FormLabel,
 } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
-import handleSubmit from "../Helpers/index";
+
 
 function ReadMeGenerator() {
+  const navigate = useNavigate();
   return (
     <div>
       <Form>
         <Row>
           <Col>
-           
             <FormLabel className="label">
               Please Insert The Name Of The Project/Application
             </FormLabel>
@@ -48,7 +49,6 @@ function ReadMeGenerator() {
               Please Insert A Short Description Of The Application
             </FormLabel>
             <FloatingLabel className="mar2" label="Description">
-
               <Form.Control as="textarea" style={{ height: "100px" }} id="4" />
             </FloatingLabel>
             <FormLabel className="label">
@@ -138,7 +138,7 @@ function ReadMeGenerator() {
       <Button
         variant="dark"
         style={{ margin: " 30px 10px 10px 10px" }}
-        onClick={handleSubmit}
+        onClick={() => navigate('/handleSubmit')}
       >
         Submit
       </Button>
