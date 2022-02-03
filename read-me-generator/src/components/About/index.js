@@ -13,8 +13,7 @@ function About() {
             <p>
               {" "}
               Hi my name is Sam, I'm a full-stack web developer based out of
-              Toronto, Ontario. Initially I started of as an Industrial and
-              Operations Engineer out of Portland, Oregon. I did this project
+              Toronto, Ontario. I did this project
               because I enjoy optimizing and streamlining processes.
               <br></br>
               <br></br>
