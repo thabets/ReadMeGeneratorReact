@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 function Footer(props) {
   return (
-    <footer className=" px-2 py-2  center">
+    <footer className=" px-2 py-2  center footer">
       <a
         href="https://www.linkedin.com/in/sallam-thabet-93418518a/"
         target="blank"

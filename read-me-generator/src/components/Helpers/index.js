@@ -2,7 +2,6 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-
 function HandleSubmit() {
   let navigate = useNavigate();
   const projectName = document.getElementById("1").value;
@@ -110,13 +109,11 @@ function HandleSubmit() {
           <br></br> This project uses the following license: {license}
         </Card.Text>
       </Card>
-      <Button
-        variant="dark"
-        style={{ margin: " 30px 10px 10px 10px" }}
-        onClick={() => navigate('/readMeGenerator')}
-      >
-        Submit
-      </Button>
+      <Card className="mar3">
+        <Button variant="primary" onClick={() => navigate("/readMeGenerator")}>
+          Return
+        </Button>
+      </Card>
     </div>
   );
 }

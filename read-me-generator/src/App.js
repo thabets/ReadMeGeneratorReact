@@ -16,7 +16,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(165, 42, 42, 1), rgba(0, 133, 255, 1))`,
+        
       }}
     >
       <Nav home={home} setHome={setHome}></Nav>

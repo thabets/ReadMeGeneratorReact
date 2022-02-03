@@ -5,7 +5,11 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--light);
+  background: linear-gradient(
+    to right,
+    rgba(165, 42, 42, 1),
+    rgba(0, 133, 255, 1)
+  );
   color: var(--dark);
   font-family: "arial", cursive;
 }
@@ -44,7 +48,6 @@ code {
   margin-left: var(--spacing-two);
 }
 .hbackground {
-  
   color: #e9ecef;
   text-decoration: none;
 }
@@ -65,20 +68,32 @@ li {
 .mar {
   margin: 60px 60px 60px 60px;
 }
-.header{
-  color: 'black';
+.header {
+  color: "black";
 }
-.border{
-  border-radius: '3rem';
+.border {
+  border-radius: "3rem";
 }
-.label{
+.label {
   color: white;
   padding-top: 20px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
-.mar2{
+.mar2 {
   margin-left: 10px;
   margin-right: 10px;
+}
+.mar3 {
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 70px;
+}
+.footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 20px;
+  width: 100%;
+  height: 40px;
 }

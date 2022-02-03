@@ -6,10 +6,9 @@ import {
   FloatingLabel,
   Button,
   FormLabel,
+  Card,
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
-
 
 function ReadMeGenerator() {
   const navigate = useNavigate();
@@ -135,13 +134,11 @@ function ReadMeGenerator() {
           </Col>
         </Row>
       </Form>
-      <Button
-        variant="dark"
-        style={{ margin: " 30px 10px 10px 10px" }}
-        onClick={() => navigate('/handleSubmit')}
-      >
-        Submit
-      </Button>
+      <Card style={{ margin: "5% 45% 0px 45%" }}>
+        <Button variant="primary" onClick={() => navigate("/handleSubmit")}>
+          Submit
+        </Button>
+      </Card>
     </div>
   );
 }
