@@ -1,8 +1,8 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Nav(props) {
-  
+  const navigate = useNavigate();
 
   return (
     <header
@@ -22,7 +22,7 @@ function Nav(props) {
             <a
               href="about"
               className="hbackground"
-              onClick={() => Navigate("/about")}
+              onClick={() => navigate("/about")}
             >
               About
             </a>
@@ -31,7 +31,7 @@ function Nav(props) {
             <a
               href="readMeGenerator"
               className="hbackground"
-              onClick={() => Navigate("/readMeGenerator")}
+              onClick={() => navigate("/readMeGenerator")}
             >
               Application
             </a>
