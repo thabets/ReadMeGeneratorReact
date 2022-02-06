@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+//Input form DOM for the read me generator 
 function ReadMeGenerator() {
   const navigate = useNavigate();
   return (
@@ -17,9 +18,11 @@ function ReadMeGenerator() {
       <Form>
         <Row>
           <Col>
+            {/* Forms for user input  */}
             <FormLabel className="label">
               Please Insert The Name Of The Project/Application
             </FormLabel>
+            {/* Form control for identification of form as well as styling */}
             <Form.Control
               className="mar2"
               placeholder="Project Name"
