@@ -2,8 +2,12 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+//Submit handler to render the final product for copy purposes
 function HandleSubmit() {
+  //Navigating function using react router dom
   let navigate = useNavigate();
+
+  //Setting variable to extract the information from the webpage to display on the readme
   const projectName = document.getElementById("1").value;
   const creator = document.getElementById("2").value;
   const contributors = document.getElementById("3").value;
@@ -15,6 +19,30 @@ function HandleSubmit() {
   const contactEmail = document.getElementById("9").value;
   const contactNum = document.getElementById("10").value;
   const license = document.getElementById("11").value;
+
+  //Function to render the license link
+  function renderLicenseLink(license) {
+    if (license == "MIT") {
+      return "(https://opensource.org/licenses/MIT)";
+    } else if (license == "IBM") {
+      return "(https://opensource.org/licenses/IPL-1.0)";
+    } else if (license == "ISC") {
+      return "(https://opensource.org/licenses/ISC)";
+    } else if (license == "Mozilla") {
+      return "(https://opensource.org/licenses/MPL-2.0)";
+    } else if (license == "Apache 2.0") {
+      return "(https://opensource.org/licenses/Apache-2.0)";
+    } else if (license == "Boost") {
+      return "(https://www.boost.org/LICENSE_1_0.txt)";
+    } else if (license == "BSD") {
+      return "(https://opensource.org/licenses/BSD-3-Clause)";
+    } else {
+      return "None";
+    }
+  }
+  let licenseLink = renderLicenseLink(license);
+
+  // Below is the return of the submit handler that will display the readme to be copied
   return (
     <div>
       <Card className="pd mar border">
@@ -106,9 +134,11 @@ function HandleSubmit() {
           If you want to contact me you can reach me at {contactEmail} or{" "}
           {contactNum}.<br></br>
           <br></br>## License<br></br>
-          <br></br> This project uses the following license: {license}
+          <br></br> This project uses the following license: {licenseLink}
         </Card.Text>
       </Card>
+      
+      {/* A return button incase there are changes that need to be done */}
       <Card className="mar3">
         <Button variant="primary" onClick={() => navigate("/readMeGenerator")}>
           Return
