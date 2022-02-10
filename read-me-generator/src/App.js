@@ -11,21 +11,17 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [home, setHome] = useState("Home");
-  
 
   return (
-    <div
-      style={{
-        
-      }}
-    >
+    <div>
       <Nav home={home} setHome={setHome}></Nav>
       <main>
         <Routes>
+          <Route path="/ReadMeGeneratorReact" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/readMeGenerator" element={<ReadMeGenerator />} />
-          <Route path="/handleSubmit" element={<HandleSubmit />}/>
+          <Route path="/handleSubmit" element={<HandleSubmit />} />
         </Routes>
       </main>
       <Footer home={home} setHome={setHome}></Footer>

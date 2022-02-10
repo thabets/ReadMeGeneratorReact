@@ -50,6 +50,10 @@ code {
 .hbackground {
   color: #e9ecef;
   text-decoration: none;
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 0px 7px 0px 7px;
+  border-color: transparent;
 }
 li {
   list-style: none;
