@@ -1,5 +1,5 @@
 import React from "react";
-//Utilization of useNavigate for in page navigation 
+//Utilization of useNavigate for in page navigation
 import { useNavigate } from "react-router-dom";
 
 //Navigational Bar function and render
@@ -15,30 +15,25 @@ function Nav(props) {
       }}
     >
       <h2>
-        <a href="/" className="hbackground">
+        <button className="hbackground" onClick={() => navigate("/")}>
           Read Me Generator
-        </a>
+        </button>
       </h2>
       <nav>
         {/* Navigation Links */}
         <ul className="flex-row ">
           <li className="px-2 py-2 ">
-            <a
-              href="about"
-              className="hbackground"
-              onClick={() => navigate("/about")}
-            >
+            <button className="hbackground" onClick={() => navigate("/about")}>
               About
-            </a>
+            </button>
           </li>
           <li className="px-2 py-2">
-            <a
-              href="readMeGenerator"
+            <button
               className="hbackground"
               onClick={() => navigate("/readMeGenerator")}
             >
               Application
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
