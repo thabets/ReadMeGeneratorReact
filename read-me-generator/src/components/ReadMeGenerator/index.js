@@ -30,6 +30,16 @@ function ReadMeGenerator() {
               id="1"
             ></Form.Control>
             <FormLabel className="label">
+              Please Insert The Version Number Of The Project
+            </FormLabel>
+            {/* Form control for identification of form as well as styling */}
+            <Form.Control
+              className="mar2"
+              placeholder="Version #"
+              style={{ width: "98%" }}
+              id="12"
+            ></Form.Control>
+            <FormLabel className="label">
               Please Insert The Name Of The Creator
             </FormLabel>
             <Form.Control
@@ -67,13 +77,22 @@ function ReadMeGenerator() {
             <FormLabel className="label">
               Please Insert The Paths To Your Image Within Github
             </FormLabel>
-
             <FloatingLabel
               label="Image Path ex ../src/images/image.jpg"
               className="mar2"
             >
               <Form.Control as="textarea" style={{ height: "100px" }} id="6" />
             </FloatingLabel>
+
+            <FormLabel className="label">
+              Please Insert The Technologies Utilized Seperated By A Comma
+            </FormLabel>
+            <Form.Control
+              className="mar2"
+              placeholder="Technologies"
+              style={{ width: "98%" }}
+              id="13"
+            ></Form.Control>
 
             <FormLabel className="label">
               Please Provide A Link To The Active Application/Website
@@ -84,7 +103,6 @@ function ReadMeGenerator() {
               style={{ width: "98%" }}
               id="7"
             ></Form.Control>
-
             <FormLabel className="label">
               Please Provide Repository Link
             </FormLabel>
@@ -94,7 +112,6 @@ function ReadMeGenerator() {
               style={{ width: "98%" }}
               id="8"
             />
-
             <FormLabel className="label">
               Please Provide Contact Information
             </FormLabel>
@@ -104,7 +121,6 @@ function ReadMeGenerator() {
               style={{ width: "98%" }}
               id="9"
             />
-
             <FormLabel className="label">
               Please Provide Contact Number
             </FormLabel>
@@ -114,7 +130,6 @@ function ReadMeGenerator() {
               style={{ width: "98%" }}
               id="10"
             />
-
             <FormLabel className="label">
               Please Choose From The Listed Licenses For Your Project
             </FormLabel>
@@ -137,7 +152,7 @@ function ReadMeGenerator() {
           </Col>
         </Row>
       </Form>
-      <Card style={{ margin: "5% 45% 0px 45%" }}>
+      <Card style={{ margin: "5% 45% 5% 45%" }}>
         <Button variant="primary" onClick={() => navigate("/handleSubmit")}>
           Submit
         </Button>
