@@ -19,6 +19,8 @@ function HandleSubmit() {
   const contactEmail = document.getElementById("9").value;
   const contactNum = document.getElementById("10").value;
   const license = document.getElementById("11").value;
+  const version = document.getElementById("12").value;
+  const technology = document.getElementbyId("13").value;
 
   //Function to render the license link
   function renderLicenseLink(license) {
@@ -52,20 +54,26 @@ function HandleSubmit() {
         </Card.Body>
         <Card.Text>
           <br></br>
-          <br></br># Table of Content
+          license: {licenseLink}
+          Version: [![CurrentVersion](https://img.shields.io/badge/version-
+          {version}-green.svg)]
           <br></br>
-          <br></br>## [Project Name](#project-name)
-          <br></br>## [Project Creator](#project-creator)
-          <br></br>## [Description](#description)
-          <br></br>## [Prerequisites for Use](#prerequisites)
-          <br></br>## [Installation](#installing)
-          <br></br>## [Screenshot](#screenshot)
-          <br></br>## [Active Url](#active-url)
-          <br></br>## [Repository Link](#repository-link)
-          <br></br>## [Contributing To](#contributing-to)
-          <br></br>## [Contributors](#contributors)
-          <br></br>## [Contact](#contact)
-          <br></br>## [license](#license)
+          <details open="open">
+            <summary>Table of Contents</summary>
+            <br></br>- [Creator](#creator)<br></br>
+            -[Project Description](#description)<br></br>
+            -[Installation](#installing)<br></br>
+            -[Technology](#technologies)
+            <br></br>
+            -[Images](#screenshot)<br></br>
+            -[URL](#active-url)<br></br>
+            -[Repository](#repository)<br></br>
+            -[Contributor](#contributors)
+            <br></br>
+            -[License](#license)<br></br>
+            -[Contact](#contact)<br></br>
+          </details>
+          ---
           <br></br>
           <br></br># Project name
           {projectName}
@@ -90,6 +98,10 @@ function HandleSubmit() {
           <br></br>To install {projectName}, follow these steps:
           <br></br>
           {installReq}
+          <br></br>
+          <br></br>
+          ## Technologies <br></br>
+          <br></br>Technologies used are {technology}
           <br></br>
           <br></br>
           ## Screenshot<br></br>
@@ -127,17 +139,20 @@ function HandleSubmit() {
           <br></br>
           {contributors}
           <br></br>
+          <br></br>## License<br></br>
+          <br></br> This project is licensed under the following license:{" "}
+          {licenseLink}
+          <br></br>
           <br></br>
           ## Contact
           <br></br>
           <br></br>
           If you want to contact me you can reach me at {contactEmail} or{" "}
           {contactNum}.<br></br>
-          <br></br>## License<br></br>
-          <br></br> This project uses the following license: {licenseLink}
+          <br></br>
         </Card.Text>
       </Card>
-      
+
       {/* A return button incase there are changes that need to be done */}
       <Card className="mar3">
         <Button variant="primary" onClick={() => navigate("/readMeGenerator")}>
