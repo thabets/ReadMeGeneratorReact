@@ -23,7 +23,8 @@ There are no installation requirements for this. Just open the link and fill out
 
 ## Technologies
 
-Technologies used are *React *Node *JavaScript *React Bootsrap *React Icons * React Dom * React Router Dom * gh-pages
+Technologies used are:
+* React * Node * JavaScript * React Bootsrap * React Icons * React Dom * React Router Dom * gh-pages
 
 ## Screenshot
 
