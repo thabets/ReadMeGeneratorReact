@@ -60,7 +60,9 @@ None
 
 ## License
 
-This project is licensed under the following license: MIT, please click on link for how to use https://opensource.org/licenses/MIT
+This project is licensed under the following license: 
+
+MIT, please click on link for how to use https://opensource.org/licenses/MIT
 
 ## Contact
 
