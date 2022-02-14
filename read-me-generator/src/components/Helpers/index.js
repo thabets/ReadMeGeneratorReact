@@ -25,24 +25,46 @@ function HandleSubmit() {
   //Function to render the license link
   function renderLicenseLink(license) {
     if (license == "MIT") {
-      return "(https://opensource.org/licenses/MIT)";
+      return "MIT, please click on link for how to use: https://opensource.org/licenses/MIT";
     } else if (license == "IBM") {
-      return "(https://opensource.org/licenses/IPL-1.0)";
+      return "IBM, please click on link for how to use: https://opensource.org/licenses/IPL-1.0";
     } else if (license == "ISC") {
-      return "(https://opensource.org/licenses/ISC)";
+      return "ISC, please click on link for how to use: https://opensource.org/licenses/ISC";
     } else if (license == "Mozilla") {
-      return "(https://opensource.org/licenses/MPL-2.0)";
+      return "Mozilla, please click on link for how to use: https://opensource.org/licenses/MPL-2.0";
     } else if (license == "Apache 2.0") {
-      return "(https://opensource.org/licenses/Apache-2.0)";
+      return "Apache 2.0, please click on link for how to use: https://opensource.org/licenses/Apache-2.0";
     } else if (license == "Boost") {
-      return "(https://www.boost.org/LICENSE_1_0.txt)";
+      return "Boost, please click on link for how to use: https://www.boost.org/LICENSE_1_0.txt";
     } else if (license == "BSD") {
-      return "(https://opensource.org/licenses/BSD-3-Clause)";
+      return "BSD, please click on link for how to use: https://opensource.org/licenses/BSD-3-Clause";
     } else {
-      return "None";
+      return "The user chooses not provide a license for this project, please contact the user in case";
     }
   }
   let licenseLink = renderLicenseLink(license);
+
+  //Function to provide with the license badge
+  function renderLicenseBadge(license) {
+    if (license == "MIT") {
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (license == "IBM") {
+      return "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
+    } else if (license == "ISC") {
+      return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+    } else if (license == "Mozilla") {
+      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+    } else if (license == "Apache 2.0") {
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    } else if (license == "Boost") {
+      return "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+    } else if (license == "BSD") {
+      return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+    } else {
+      return " ";
+    }
+  }
+  let licenseBadge = renderLicenseBadge(license);
 
   //Function to render the technologies utilized
   function techFunc(technology) {
@@ -52,7 +74,7 @@ function HandleSubmit() {
     let technologies = "";
     //For loop to go through all elements in array
     for (let i = 0; i < tech.length; i++) {
-      technologies += "*" + tech[i]+" " ;
+      technologies += "*" + tech[i] + " ";
     }
     //Returning the text put into technologies to be fed to the document
     return technologies;
@@ -70,28 +92,12 @@ function HandleSubmit() {
         </Card.Body>
         <Card.Text>
           <br></br>
-          license: {licenseLink} Version:
-          [![CurrentVersion](https://img.shields.io/badge/version-
-          {version}-green.svg)]
+          {licenseBadge}
+          ![CurrentVersion](https://img.shields.io/badge/version-
+          {version}-green.svg)
           <br></br>
           <br></br>
-          <details open="open">
-            <summary>Table of Contents</summary>
-            -[Creator](#creator)<br></br>
-            -[Project Description](#description)<br></br>
-            -[Installation](#installing)<br></br>
-            -[Technology](#technologies)
-            <br></br>
-            -[Images](#screenshot)<br></br>
-            -[URL](#active-url)<br></br>
-            -[Repository](#repository)<br></br>
-            -[Contributor](#contributors)
-            <br></br>
-            -[License](#license)<br></br>
-            -[Contact](#contact)<br></br>
-          </details>
           ---
-          <br></br>
           <br></br># Project name <br></br>
           {projectName}
           <br></br>
@@ -126,7 +132,9 @@ function HandleSubmit() {
           ![Screenshot]({imagePath})<br></br>
           <br></br>
           ## Active Url<br></br>
-          <br></br> Here is the link to the active site: {ActiveLink}
+          <br></br> Here is the link to the active site: <br></br>
+          <br></br>
+          {ActiveLink}
           <br></br>
           <br></br>
           ## Repository<br></br>
