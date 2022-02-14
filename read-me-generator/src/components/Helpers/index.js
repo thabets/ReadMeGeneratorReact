@@ -165,8 +165,9 @@ function HandleSubmit() {
           {contributors}
           <br></br>
           <br></br>## License<br></br>
-          <br></br> This project is licensed under the following license:{" "}
-          {licenseLink}
+          <br></br> This project is licensed under the following license:
+          <br></br>
+          <br></br> {licenseLink}
           <br></br>
           <br></br>
           ## Contact
