@@ -23,15 +23,25 @@ There are no installation requirements for this. Just open the link and fill out
 
 ## Technologies
 
-Technologies used are *React *Node *JavaScript *React Bootsrap *React Icons * React Dom * React Router Dom * gh-pages
+Technologies used are:
+* React 
+* Node 
+* JavaScript 
+* React Bootsrap 
+* React Icons 
+* React Dom 
+* React Router Dom 
+* gh-pages
 
 ## Screenshot
 
-![Screenshot]()
+![Screenshot](/read-me-generator/public/ReadMeGenerator.jpg)
 
 ## Active Url
 
-Here is the link to the active site: https://thabets.github.io/ReadMeGeneratorReact/
+Here is the link to the active site: 
+
+https://thabets.github.io/ReadMeGeneratorReact/
 
 ## Repository
 
@@ -58,8 +68,10 @@ None
 
 ## License
 
-This project is licensed under the following license: MIT, please click on link for how to use https://opensource.org/licenses/MIT
+This project is licensed under the following license: 
+
+MIT, please click on link for how to use https://opensource.org/licenses/MIT
 
 ## Contact
 
-If you want to contact me you can reach me at sallam.thabet@gmail.com or N/A.
+If you want to contact me you can reach me at sallam.thabet@gmail.com.
