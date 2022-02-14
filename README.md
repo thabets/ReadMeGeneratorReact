@@ -1,15 +1,24 @@
 license: (https://opensource.org/licenses/MIT) Version: [![CurrentVersion](https://img.shields.io/badge/version-1.0.0-green.svg)]
 
 Table of Contents
-[Creator](#creator)
-[Project Description](#description)
-[Installation](#installing)
+-[Creator](#creator)
+
+-[Project Description](#description)
+
+-[Installation](#installing)
+
 -[Technology](#technologies)
+
 -[Images](#screenshot)
+
 -[URL](#active-url)
+
 -[Repository](#repository)
+
 -[Contributor](#contributors)
+
 -[License](#license)
+
 -[Contact](#contact)
 ---
 
