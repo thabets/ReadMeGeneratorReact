@@ -31,7 +31,9 @@ Technologies used are *React *Node *JavaScript *React Bootsrap *React Icons * Re
 
 ## Active Url
 
-Here is the link to the active site: https://thabets.github.io/ReadMeGeneratorReact/
+Here is the link to the active site: 
+
+https://thabets.github.io/ReadMeGeneratorReact/
 
 ## Repository
 
@@ -62,4 +64,4 @@ This project is licensed under the following license: MIT, please click on link 
 
 ## Contact
 
-If you want to contact me you can reach me at sallam.thabet@gmail.com or N/A.
+If you want to contact me you can reach me at sallam.thabet@gmail.com.
