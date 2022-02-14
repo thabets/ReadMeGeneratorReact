@@ -27,7 +27,7 @@ Technologies used are *React *Node *JavaScript *React Bootsrap *React Icons * Re
 
 ## Screenshot
 
-![Screenshot](/public/ReadMeGenerator.jpg)
+![Screenshot](/red-me-generator/public/ReadMeGenerator.jpg)
 
 ## Active Url
 
