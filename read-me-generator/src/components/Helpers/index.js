@@ -20,7 +20,7 @@ function HandleSubmit() {
   const contactNum = document.getElementById("10").value;
   const license = document.getElementById("11").value;
   const version = document.getElementById("12").value;
-  const technology = document.getElementbyId("13").value;
+  const technology = document.getElementById("13").value;
 
   //Function to render the license link
   function renderLicenseLink(license) {
@@ -44,6 +44,22 @@ function HandleSubmit() {
   }
   let licenseLink = renderLicenseLink(license);
 
+  //Function to render the technologies utilized
+  function techFunc(technology) {
+    // Spliting the items of technologies in an array
+    let tech = technology.split(",");
+    //Setting text variable for technologies used to be put into
+    let technologies = "";
+    //For loop to go through all elements in array
+    for (let i = 0; i < tech.length; i++) {
+      technologies += "*" + tech[i]+" " ;
+    }
+    //Returning the text put into technologies to be fed to the document
+    return technologies;
+  }
+  // Setting the variable for the function to run in to be fed back to document.
+  let techFunction = techFunc(technology);
+
   // Below is the return of the submit handler that will display the readme to be copied
   return (
     <div>
@@ -54,13 +70,14 @@ function HandleSubmit() {
         </Card.Body>
         <Card.Text>
           <br></br>
-          license: {licenseLink}
-          Version: [![CurrentVersion](https://img.shields.io/badge/version-
+          license: {licenseLink} Version:
+          [![CurrentVersion](https://img.shields.io/badge/version-
           {version}-green.svg)]
+          <br></br>
           <br></br>
           <details open="open">
             <summary>Table of Contents</summary>
-            <br></br>- [Creator](#creator)<br></br>
+            -[Creator](#creator)<br></br>
             -[Project Description](#description)<br></br>
             -[Installation](#installing)<br></br>
             -[Technology](#technologies)
@@ -75,13 +92,13 @@ function HandleSubmit() {
           </details>
           ---
           <br></br>
-          <br></br># Project name
+          <br></br># Project name <br></br>
           {projectName}
           <br></br>
-          <br></br># Project Creator
+          <br></br># Project Creator<br></br>
           {creator}
           <br></br>
-          <br></br># Description
+          <br></br># Description<br></br>
           {description}
           <br></br>
           <br></br>
@@ -101,7 +118,7 @@ function HandleSubmit() {
           <br></br>
           <br></br>
           ## Technologies <br></br>
-          <br></br>Technologies used are {technology}
+          <br></br>Technologies used are {techFunction}
           <br></br>
           <br></br>
           ## Screenshot<br></br>
@@ -113,7 +130,7 @@ function HandleSubmit() {
           <br></br>
           <br></br>
           ## Repository<br></br>
-          <br></br> Link Here is the link to the Github Repository: <br></br>
+          <br></br> Here is the link to the Github Repository: <br></br>
           <br></br>
           {repositoryLink}
           <br></br>
