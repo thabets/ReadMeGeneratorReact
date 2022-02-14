@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![CurrentVersion](https://img.shields.io/badge/version-1.0.0-green.svg)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![CurrentVersion](https://img.shields.io/badge/version-1.0.0-green.svg)
 
 
 # Project name
