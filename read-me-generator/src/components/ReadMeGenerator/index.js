@@ -130,6 +130,7 @@ function ReadMeGenerator() {
               style={{ width: "98%" }}
               id="10"
             />
+            {/* This functions as the license drop down section for badge as well as instructions towards link*/}
             <FormLabel className="label">
               Please Choose From The Listed Licenses For Your Project
             </FormLabel>
