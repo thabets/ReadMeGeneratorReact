@@ -74,7 +74,7 @@ function HandleSubmit() {
     let technologies = "";
     //For loop to go through all elements in array
     for (let i = 0; i < tech.length; i++) {
-      technologies += "*" + tech[i] + " ";
+      technologies += "*" + " " + tech[i] + " ";
     }
     //Returning the text put into technologies to be fed to the document
     return technologies;
