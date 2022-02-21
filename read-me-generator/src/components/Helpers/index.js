@@ -124,7 +124,8 @@ function HandleSubmit() {
           <br></br>
           <br></br>
           ## Technologies <br></br>
-          <br></br>Technologies used are {techFunction}
+          <br></br>Technologies used are:<br></br>
+          {techFunction}
           <br></br>
           <br></br>
           ## Screenshot<br></br>
