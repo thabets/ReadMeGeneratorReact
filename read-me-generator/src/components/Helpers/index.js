@@ -1,11 +1,20 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import {useState} from "react";
+import {CopyToClipboard} from "react-copy-to-clipboard"
 
 //Submit handler to render the final product for copy purposes
 function HandleSubmit() {
   //Navigating function using react router dom
   let navigate = useNavigate();
+  //Setting up the copy feature utilizing useState
+  const [ value,setValue] = useState('');
+  const [copied,setCopied] = useState(false);
+  
+const handlecopy = ()=>{
+  console.log('value');
+}
 
   //Setting variable to extract the information from the webpage to display on the readme
   const projectName = document.getElementById("1").value;
@@ -87,10 +96,11 @@ function HandleSubmit() {
     <div>
       <Card className="pd mar border">
         <Card.Body className="text-center">
+        
           Please Copy Your Generated ReadMe Below for {projectName} and paste it
           to your README.md or into github read me editor
         </Card.Body>
-        <Card.Text>
+        <Card.Text >
           <br></br>
           {licenseBadge}
           ![CurrentVersion](https://img.shields.io/badge/version-
@@ -177,6 +187,9 @@ function HandleSubmit() {
           If you want to contact me you can reach me at {contactEmail} or{" "}
           {contactNum}.<br></br>
           <br></br>
+          
+       
+          
         </Card.Text>
       </Card>
 
@@ -185,6 +198,7 @@ function HandleSubmit() {
         <Button variant="primary" onClick={() => navigate("/readMeGenerator")}>
           Return
         </Button>
+       
       </Card>
     </div>
   );
