@@ -8,7 +8,7 @@ Read Me Generator
 Sam Thabet
 
 # Description
-This is a Read Me Generator, Was made to simplify the process of creating ones own readme file formatted for Github. The goal is to make a simpler standardized read me that follows a specific pattern providing the reader with all the necessary information required.
+This is a Read Me Generator, was made to simplify the process of creating ones own readme file, it is formatted for Github and requires you to answer a few questions and simpley copy and paste what it spits out to your readme file. The goal is to make a simpler standardized read me that follows a specific pattern providing the reader with all the necessary information required.
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
